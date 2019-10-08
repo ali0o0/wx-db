@@ -1,0 +1,23 @@
+/* pages/profile/profile.wxss */
+.profile{
+  background: #e54847;
+  height: 400rpx;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.profile-img{
+  position: absolute;
+  width: 200rpx;
+  height: 200rpx;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%,60rpx);
+}
+.profile-name{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,300rpx);
+}

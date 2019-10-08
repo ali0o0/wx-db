@@ -1,0 +1,25 @@
+<!--pages/comment/comment.wxml-->
+<view class="detail-container" style="background:url({{detail.images.large}}) no-repeat top">
+</view>
+<view class="detail-mask"></view>
+<view class="detail-info">
+  <image src="{{detail.images.large}}" class="detail-img"></image>
+  <view class="detail">
+    <view>{{detail.title}}</view>
+    <view>{{detail.original_title}}</view>
+    <view>{{detail.rating.average}}</view>
+    <view>{{detail.countries}}</view>
+    <view>{{detail.directors[0].name}}</view>
+  </view>
+</view>
+<view class="desc">
+  {{detail.summary}}
+</view>
+<van-field value="{{ value1 }}" placeholder="请发表评论" bind:change="onContentChange" />
+<van-rate value="{{ value2 }}" icon="like" void-icon="like-o" color="#f00" void-color="#00f" bind:change="onChangeScore" />
+
+<view>
+  <image class="comment-img" wx:for="{{images}}" wx:key="index" src="{{item}}"></image>
+</view>
+<van-button type="warning" size="large" bindtap="uploadFile">上传图片</van-button>
+<van-button type="default" size="large" bindtap="comment" color="#7232dd" plain>发表评论</van-button>

@@ -1,0 +1,6 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+<view class="container" wx:for="{{list}}" wx:key="index">
+  <image wx:for="{{item.fileid}}" wx:key="index" src="{{item}}"></image>
+  <text>电影的名称:{{item.name}}</text>
+  <text>评论:{{item.msg}}</text>
+</view>

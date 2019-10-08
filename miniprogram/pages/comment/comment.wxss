@@ -1,0 +1,41 @@
+/* pages/comment/comment.wxss */
+.detail-container{
+  height: 400rpx;
+  opacity: 0.9;
+  filter:blur(40rpx);
+}
+.detail-mask{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 400rpx;
+  background: #333;
+}
+.detail-info{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400rpx;
+  padding: 20rpx;
+  display: flex;
+}
+.detail-img{
+  width: 280rpx;
+  height: 90%;
+  margin-right: 24rpx;
+}
+.detail{
+  line-height: 60rpx;
+}
+.detail view{
+  color: #fff;
+  font-size: 24rpx;
+}
+.comment-img{
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
+}

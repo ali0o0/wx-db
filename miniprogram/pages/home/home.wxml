@@ -1,0 +1,11 @@
+<!--pages/home/home.wxml-->
+<view class="movie" wx:for="{{list}}" wx:key="index">
+  <image class="movie-img" src="{{item.images.small}}"></image>
+  <view class="movie-info">
+    <view class="movie-title">{{item.title}}</view>
+    <view class="movie-score">{{item.rating.average}}</view>
+    <view>主演:{{item.casts[0].name}}</view>
+    <view>年份:{{item.year}}</view>
+    <button class="movie-comment" data-id="{{item.id}}" bindtap="jumpComment">详情</button>
+  </view>
+</view>
